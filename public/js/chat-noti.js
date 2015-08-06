@@ -325,6 +325,11 @@
 			body: msg,
 			icon: 'images/msg.png' 
 	});
+	
+	en.onclick = function(){
+	    window.focus();
+	    this.cancel();
+	};
 
 	setTimeout(en.close.bind(en), ms);
   }
